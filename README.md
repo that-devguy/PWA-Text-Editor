@@ -1,7 +1,7 @@
 # PWA Text Editor
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
-*Just Another Text Editor* that meats the PWA criteria! This application is a single-page app that features a number of persistant data techniques that serve as redundancy in case one of the options is not supported by the browser. *J.A.T.E.* will also function offline by implementing methods for getting and storing data to an IndexedDB database.
+*Just Another Text Editor* that meets the PWA criteria! This application is a single-page app that features a number of persistant data techniques that serve as redundancy in case one of the options is not supported by the browser. *J.A.T.E.* will also function offline by implementing methods for getting and storing data to an IndexedDB database.
   
   
 ## Table of Contents
