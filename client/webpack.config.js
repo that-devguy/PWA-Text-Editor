@@ -56,7 +56,7 @@ module.exports = () => {
           use: ["style-loader", "css-loader"],
         },
 
-        // Add Babel loader to transpile JavaScript files
+        // Babel loader to transpile JavaScript files
         {
           test: /\.js$/,
           exclude: /node_modules/,
