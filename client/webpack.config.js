@@ -28,8 +28,8 @@ module.exports = () => {
         name: "Just Another Text Editor",
         short_name: "J.A.T.E.",
         description: "Take notes or write code snippets anywhere, anytime!",
-        background_color: "#ffffff",
-        theme_color: "#3367d6",
+        background_color: "#272822",
+        theme_color: "#31A9E1",
         start_url: "/",
         publicPath: "./",
         icons: [
