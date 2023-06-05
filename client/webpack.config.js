@@ -17,7 +17,7 @@ module.exports = () => {
     plugins: [
       // HtmlWebpackPlugin for generating the HTML file
       new HtmlWebpackPlugin({
-        template: "./src/index.html",
+        template: "./index.html",
         title: "Just Another Text Editor",
       }),
 
@@ -30,7 +30,7 @@ module.exports = () => {
         description: "Take notes or write code snippets anywhere, anytime!",
         background_color: "#ffffff",
         theme_color: "#3367d6",
-        start_url: "./",
+        start_url: "/",
         publicPath: "./",
         icons: [
           {
@@ -43,7 +43,7 @@ module.exports = () => {
 
       // InjectManifest to generate service worker using Workbox
       new InjectManifest({
-        swSrc: "./src/sw.js",
+        swSrc: "./src-sw.js",
         swDest: 'src-sw.js',
       }),
     ],
@@ -52,22 +52,18 @@ module.exports = () => {
       rules: [
         // CSS loaders to handle CSS files
         {
-          test: /\.css$/,
-          use: ["style-loader", "css-loader"],
+          test: /\.css$/i,
+          use: ['style-loader', 'css-loader'],
         },
-
-        // Babel loader to transpile JavaScript files
         {
-          test: /\.js$/,
+          test: /\.m?js$/,
           exclude: /node_modules/,
+          // We use babel-loader in order to use ES6.
           use: {
-            loader: "babel-loader",
+            loader: 'babel-loader',
             options: {
-              presets: ["@babel/preset-env"],
-              plugins: [
-                "@babel/plugin-proposal-object-rest-spread",
-                "@babel/transform-runtime",
-              ],
+              presets: ['@babel/preset-env'],
+              plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime'],
             },
           },
         },
