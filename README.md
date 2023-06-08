@@ -64,7 +64,7 @@ Testing instructions will be available in a future update.
   
 ## Project Links
   
-Deployed Application: https://pwa-jate-zkm.herokuapp.com/
+Deployed Application: **Application is not currently deployed**
 
 GitHub Repository: https://github.com/that-devguy/PWA-Text-Editor
 
